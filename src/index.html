@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in - CUTE</title>
+    <!-- Tailwind CSS  -->
+    <link rel="stylesheet" href="./output.css" />
+    <!-- My own style  -->
+
+  </head>
+  <body>
+    <div class="container" class="h-screen w-full">
+      <main class="flex">
+        <!-- Background Divider  -->
+        <div class="h-screen w-1/2">
+          <img
+            src="../assets/img/gambling-slot-machine-casino.jpg"
+            class="h-screen w-full hidden lg:block"
+          />
+        </div>
+        <div
+          id="main-container"
+          class="flex flex-col justify-center items-center w-3/6"
+        >
+          <header class="w-1/2 mb-6">
+            <h1 class="text-4xl text-red-700 font-semibold">Hello,</h1>
+            <h2 class="text-2xl mb-1">Welcome back</h2>
+            <p>Log in to manage your account.</p>
+          </header>
+          <form action="#" class="w-1/2">
+            <div class="flex flex-col items-start mb-4">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                class="border-b-[3px] rounded-lg px-3 py-1 focus:invalid:border-red-600 focus:invalid:text-red-600 shadow-sm"
+              />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+                minlength="4"
+                maxlength="12"
+                class="border-b-[3px] rounded-lg px-3 py-1 mt-1 focus:invalid:border-red-600 focus:invalid:text-red-600 shadow-sm"
+              />
+            </div>
+            <p>
+              <a href="#" class="text-indigo-400">Forget your password ?</a>
+            </p>
+            <button
+              type="submit"
+              class="bg-red-600 text-white p-2 w-full rounded-md mt-3 hover:bg-red-700 hover:text-gray-50"
+            >
+              Login
+            </button>
+            <div class="text-center my-4"><span>OR</span></div>
+            <section
+              id="socmed-login"
+              class="flex justify-center items-center gap-2 my-3"
+            >
+              <a href="#"
+                ><img
+                  src="../assets/icons/facebook.png"
+                  alt="Login facebook"
+                  class="w-6 hover:shadow-md"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/icons/google.png"
+                  alt="Login google"
+                  class="w-6 hover:shadow-md"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/icons/insta.png"
+                  alt="Login instagram"
+                  class="w-6 hover:shadow-md"
+              /></a>
+            </section>
+            <p class="text-center">
+              don't have an account?
+              <span
+                ><a href="#" class="text-indigo-400 hover:underline"
+                  >Sign up</a
+                ></span
+              >
+            </p>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
